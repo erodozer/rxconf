@@ -1,0 +1,18 @@
+{
+  "name": "@lunared/rxconf-consul",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "engines": {
+    "node": ">=12.0.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "consul": "^0.37.0",
+    "rxjs": "^6.5.5"
+  }
+}

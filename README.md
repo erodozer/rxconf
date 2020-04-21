@@ -42,19 +42,3 @@ rxconfig.take(1).subscribe(
 
 ```
 
-An additional helper function is provided for config that matches standards at TMG.  You can use it to start your service in less lines of code
-
-```javascript
-const { tmgConfig } = require('rx-conf/tmg');
-const pkg = require('./package.json');
-
-tmgConfig(pkg.name)
-    // returns the rxconf instance, as well as the first resolved config
-    .then((rxconf, config) => {
-        const {
-            port,
-        } = config;
-        const app = express();
-        app.listen(port);
-    });
-```
